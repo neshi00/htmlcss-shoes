@@ -5,6 +5,7 @@
 }
 
 .container {
+    position: relative;
     width: 1200px;
     margin: 0 auto;
 }
@@ -33,17 +34,26 @@
     font-family: 'Russo One', sans-serif;
 }
 
-.buttons {
-    width: 150px;
-    height: 50px;
-    background-color: black;
+.shortcut {
     position: fixed;
-    right: 0;
+    top: 40px;
+    right: 200px;
+    z-index: 1;        /*NB. z-index 1 */
 }
 
+.button a {
+    margin: 0 15px;
+    padding: 15px 20px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: white;
+    font-family: 'Russo One', sans-serif;
+}
 
-
-
+/*class utility*/
 /*------------------------------------------*/
 
 .box-1 {
