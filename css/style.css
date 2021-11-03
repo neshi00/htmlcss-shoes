@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    height: 100vh;
+    position: relative;
+}
+
+.box img {
+    width: 550px;
+}
+
+.content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-box p {
+    color: #ffff00;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif;
+}
+
+.buttons {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    right: 0;
+}
+
+
+
+
+/*------------------------------------------*/
+
+.box-1 {
+    background-color: red;
+}
+
+.box-2 {
+    background-color: green;
+}
+
+.box-3 {
+    background-color: #ffff00;
+}
+
+.box-3 p {
+    color: green;
+}
