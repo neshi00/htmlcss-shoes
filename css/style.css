@@ -36,9 +36,20 @@
 
 .shortcut {
     position: fixed;
+    left: 0;
     top: 40px;
-    right: 200px;
-    z-index: 1;        /*NB. z-index 1 */
+    /* right: 200px; */
+    width: 100%;
+    z-index: 5;        /*NB. z-index 1 */
+}
+
+.shortcut-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fr {
+    float: right;
 }
 
 .button a {
@@ -70,4 +81,18 @@
 
 .box-3 p {
     color: green;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-color: black;
+    z-index: 2;    
+}
+
+.box:hover::after {
+    opacity: 0;
 }
